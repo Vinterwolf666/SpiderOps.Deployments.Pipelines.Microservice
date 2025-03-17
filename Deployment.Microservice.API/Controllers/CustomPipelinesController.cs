@@ -32,5 +32,46 @@ namespace Deployment.Microservice.API.Controllers
             }
         }
 
+
+
+        [HttpGet]
+        [Route("dropGithub")]
+        public async Task<ActionResult<List<object>>> DropGitHub()
+        {
+            try
+            {
+                var result = await _customPipelinesServices.dropGitHub();
+
+                return result;
+
+
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+
+        [HttpGet]
+        [Route("Secrets")]
+        public async Task<ActionResult<List<object>>> DropSecrets()
+        {
+            try
+            {
+                var result = await _customPipelinesServices.dropSecrets();
+
+                return result;
+
+
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
     }
 }

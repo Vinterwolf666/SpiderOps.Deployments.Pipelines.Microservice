@@ -23,5 +23,16 @@ namespace Deployment.Microservice.APP
             return result;
 
         }
+
+        public Task<List<object>> dropGitHub()
+        {
+
+            return _r.dropGitHub();
+        }
+
+        public Task<List<object>> dropSecrets()
+        {
+            return _r.dropSecrets();
+        }
     }
 }
