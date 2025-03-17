@@ -25,8 +25,8 @@ namespace Deployment.Microservice.Infrastructure
         public async Task<FileContentResult> UpdatePipeline(int customer_id, int template_id, string cluster_name, string ArtifactRegistry, string REGION, string appname)
         {
              
-            string url = $"http://34.71.196.117/Deployment.Microservice.API.Controllers/DownloadPipeline?id={template_id}&file_name=build";
-
+           
+            string url = $"http://34.173.194.150/Deployment.Microservice.API.Controllers/DownloadPipeline?id={template_id}&file_name=build";
 
             var pipe = new CustomPipelines();
 
