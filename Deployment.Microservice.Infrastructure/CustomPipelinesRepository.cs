@@ -47,7 +47,7 @@ namespace Deployment.Microservice.Infrastructure
         {
              
            
-            string url = $"http://34.173.194.150/Deployment.Microservice.API.Controllers/DownloadPipeline?id={template_id}&file_name=build";
+            string url = $"http://35.225.202.230/Deployment.Microservice.API.Controllers/DownloadPipeline?id={template_id}&file_name=build";
 
             var pipe = new CustomPipelines();
 
