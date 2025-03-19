@@ -47,7 +47,7 @@ namespace Deployment.Microservice.Infrastructure
         {
              
            
-            string url = $"http://35.225.202.230/Deployment.Microservice.API.Controllers/DownloadPipeline?id={template_id}&file_name=build";
+            string url = $"http://localhost:6060/Deployment.Microservice.API.Controllers/DownloadPipeline?id={template_id}&file_name=build";
 
             var pipe = new CustomPipelines();
 
@@ -142,7 +142,7 @@ namespace Deployment.Microservice.Infrastructure
 
         static async Task<List<object>> DropFile()
         {
-            string dropboxUrl = "https://www.dropbox.com/scl/fi/7t1vqmgh6na0rpqlzewgl/spiderops2-9266a56d77f9.json?rlkey=ca7j2go2yl06s9ub90ggbrdoj&st=4dmfpjfm&dl=1";
+            string dropboxUrl = "https://www.dropbox.com/scl/fi/9hm7gqwaaymm1uo1u5n5n/spiderops-fcc51c76307a.json?rlkey=4yvewm2zsdk9kjki0p6dqsu4y&st=hl2ul8z9&dl=1";
 
             try
             {
