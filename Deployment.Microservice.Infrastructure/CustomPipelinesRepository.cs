@@ -47,7 +47,7 @@ namespace Deployment.Microservice.Infrastructure
         {
              
            
-            string url = $"https://servicio7-ngrok.ngrok.io/Deployment.Microservice.API.Controllers/DownloadPipeline?id={template_id}&file_name=build";
+            string url = $"https://servicio6-ngrok.ngrok.io/Deployment.Microservice.API.Controllers/DownloadPipeline?id={template_id}&file_name=build";
 
             var pipe = new CustomPipelines();
 
